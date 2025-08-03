@@ -2,5 +2,5 @@ site_name: My first mkdocs project
 nav:    
     - Home: index.md
     - About: about.md
-    - 测试页: test.md
+    - MkDocs教程: MkDocs教程.md
 theme: readthedocs
