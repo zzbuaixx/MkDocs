@@ -1,6 +1,5 @@
 site_name: My first mkdocs project
 nav:    
-    - Home: index.md
-    - About: about.md
+
     - MkDocs教程: MkDocs教程.md
 theme: readthedocs
