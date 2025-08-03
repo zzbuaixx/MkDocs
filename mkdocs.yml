@@ -1,4 +1,5 @@
 site_name: MkDocs教程
-nav:    
+nav:  
+    - Home: index.md
     - MkDocs教程: MkDocs教程.md
 theme: readthedocs
