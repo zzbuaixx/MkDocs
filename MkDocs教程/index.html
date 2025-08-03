@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>MkDocs教程 - My first mkdocs project</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "MkDocs\u6559\u7a0b";
+        var mkdocs_page_input_path = "MkDocs\u6559\u7a0b.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> My first mkdocs project
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="" href="../index.md">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="../about.md">About</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">MkDocs教程</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#_1">安装</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#mkdocs_1">安装MkDocs</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_2">使用教程</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_3">添加页面</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_4">修改主题</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_5">其他命令和选项</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#_6">部署</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">My first mkdocs project</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">MkDocs教程</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="mkdocs">MkDocs教程</h1>
+<p>使用Markdown创建自己的个人网页文档</p>
+<h2 id="_1">安装</h2>
+<p>首先，得确认自己电脑里面有<code>python</code>,以及和Python的包管理器<code>pip</code>,打开cmd命令行，使用以下命令来检测</p>
+<pre><code class="language-cmd">C:\Users\ZXJ&gt;python --version
+Python 3.8.3
+
+C:\Users\ZXJ&gt;pip --version
+pip 25.0.1 from D:\Python38\lib\site-packages\pip (python 3.8)
+
+</code></pre>
+<p>python和pip的安装教程自行百度</p>
+<h3 id="mkdocs_1">安装MkDocs</h3>
+<p>使用pip安装<code>MkDocs</code></p>
+<pre><code>python get-pip.py
+</code></pre>
+<p>使用以下命令检测是否安装正常</p>
+<pre><code>C:\Users\ZXJ&gt;python --version
+Python 3.8.3
+
+C:\Users\ZXJ&gt;pip --version
+pip 25.0.1 from D:\Python38\lib\site-packages\pip (python 3.8)
+
+</code></pre>
+<h2 id="_2">使用教程</h2>
+<p>如果你成功安装好了Mkdocs，那么使用教程就非常简单了。使用PowerShell运行以下命令</p>
+<pre><code>mkdocs new my-project
+cd my-projecgt
+</code></pre>
+<p>这个文件里面有一个mkdocs.yml的配置文件和doc的文件夹，这里面包含了所用的文档。现在只有一个index.md的文档。</p>
+<p>MkDocs带有一个内置的服务器，可以让你在处理文档时预览文档。 确保与<code>mkdocs.yml</code>配置文件位于同一目录中，然后通过运行<code>mkdocs serve</code>命令启动服务器：</p>
+<pre><code>$ mkdocs serve
+INFO    -  Building documentation...
+INFO    -  Cleaning site directory
+[I 160402 15:50:43 server:271] Serving on http://127.0.0.1:8000
+[I 160402 15:50:43 handlers:58] Start watching changes
+[I 160402 15:50:43 handlers:60] Start detecting changes
+</code></pre>
+<p>在浏览器中打开<code>http://127.0.0.1:8000/</code>，将看到显示的默认主页：<img alt="image-20250803182827996" src="C:\Users\ZXJ\AppData\Roaming\Typora\typora-user-images\image-20250803182827996.png" /></p>
+<p>现在尝试编辑配置文件：<code>mkdocs.yml</code>。 将[<code>site_name</code>][site_name]设置更改为“MkLorum”并保存文件。</p>
+<pre><code class="language-yaml">site_name: MkLorum
+</code></pre>
+<p>浏览器刷新后，将看到新设置的站点名称已经生效。</p>
+<h2 id="_3">添加页面</h2>
+<p>创建一个test.md文件,然后再配置文件里面，由于我们的文档站点将包含一些导航，你可以编辑配置文件，并通过添加[<code>nav</code>][nav]设置来管理每个页面导航的顺序、标题和嵌套情况：</p>
+<pre><code>site_name: MkLorum
+nav:
+    - Home: index.md
+    - Test: test.md
+</code></pre>
+<p>保存更改，你将看到左侧有“Home”和“About”导航栏，同时右侧还有“Search”，“Previous”和“Next”。</p>
+<p><img alt="image-20250803183217960" src="C:\Users\ZXJ\AppData\Roaming\Typora\typora-user-images\image-20250803183217960.png" /></p>
+<p>一段时间后，文件可能会从文档中删除，但它们仍将驻留在<code>site</code>目录中。 要删除那些陈旧的文件，只需在运行<code>mkdocs</code>命令时带上<code>--clean</code>参数即可。</p>
+<pre><code class="language-bash">mkdocs build --clean
+</code></pre>
+<h2 id="_4">修改主题</h2>
+<p>现在，更改配置文件以通过更改主题来更改文档的显示方式。 编辑<code>mkdocs.yml</code>文件并添加[<code>theme</code>] [theme]设置：</p>
+<p>```site_name: MkLorum
+nav:
+    - Home: index.md
+    - About: about.md
+theme: readthedocs</p>
+<pre><code>
+## 生成网站
+
+首先生成文档:
+
+</code></pre>
+<p>mkdocs build</p>
+<pre><code>
+这将创建一个名为`site`的新目录。 看一下该目录的情况：
+
+```bash
+$ ls site
+about  fonts  index.html  license  search.html
+css    img    js          mkdocs   sitemap.xml
+</code></pre>
+<p>请注意，你的源文档已输出为两个名为<code>index.html</code>和<code>about/index.html</code>的HTML文件。同时各种其他媒体文件也已被复制到<code>site</code>目录中作为文档主题的一部分。另外还有一个<code>sitemap.xml</code>文件和<code>mkdocs/search_index.json</code>。</p>
+<p>如果你正在使用版本控制软件，例如<code>git</code>，你可能不希望将生成的文件包含到存储库中。只需要在<code>.gitignore</code>文件中添加一行<code>site/</code>即可。</p>
+<pre><code class="language-bash">echo &quot;site/&quot; &gt;&gt; .gitignore
+</code></pre>
+<p>如果你正在使用其他版本控制工具，请你自行查阅相关文档，了解如何忽略特定目录。</p>
+<p>一段时间后，文件可能会从文档中删除，但它们仍将驻留在<code>site</code>目录中。 要删除那些陈旧的文件，只需在运行<code>mkdocs</code>命令时带上<code>--clean</code>参数即可。</p>
+<pre><code class="language-bash">mkdocs build --clean
+</code></pre>
+<h2 id="_5">其他命令和选项</h2>
+<p>还有其他各种命令和选项。有关命令的完整列表，请使用<code>--help</code>标志：</p>
+<pre><code class="language-bash">mkdocs --help
+</code></pre>
+<p>要查看给定命令上可用的选项列表，请使用带有该命令的<code>--help</code>标志。 例如，要获取<code>build</code>命令可用的所有选项的列表，请运行以下命令：</p>
+<pre><code class="language-bash">mkdocs build --help
+</code></pre>
+<h2 id="_6">部署</h2>
+<p>使用github page部署自己的文档，在github创建新项目</p>
+<p>然后在本地文件夹执行以下推荐命令</p>
+<pre><code>
+git init  初始化仓库
+
+
+
+
+
+</code></pre>
+<p>创建一个名为 <code>.gitignore</code> 的文件。这个文件用来告诉 Git 哪些文件或文件夹永远不要跟踪。</p>
+<p>在 <code>.gitignore</code> 文件里写入以下内容：</p>
+<pre><code>site/
+mkdocs.yml.bak
+</code></pre>
+<p>然后继续</p>
+<pre><code>
+git add . 添加暂存区
+git commit -m &quot;first commit&quot;  提交
+git branch -M main 创建主分支
+git remote add origin  git@github.com:zzbuaixx/test.git 关联
+git push -u origin main 推送
+</code></pre>
+<p>执行完之后，使用mkdoc是gh-deploy部署</p>
+<p>在本地目录运行</p>
+<p>```mkdocs gh-deploy
+mkdocs gh-deploy</p>
+<pre><code>
+在github主页，点击settting，点击Pages，可以看到
+
+</code></pre>
+<p>Your site is live at https://zzbuaixx.github.io/learn-MkDocs/
+```</p>
+<p>这样网页就部署好了。</p>
+              
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
