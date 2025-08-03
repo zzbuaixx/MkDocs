@@ -87,7 +87,7 @@ nav:
 
 保存更改，你将看到左侧有“Home”和“About”导航栏，同时右侧还有“Search”，“Previous”和“Next”。
 
-![image-20250803183217960](C:\Users\ZXJ\AppData\Roaming\Typora\typora-user-images\image-20250803183217960.png)
+
 
 一段时间后，文件可能会从文档中删除，但它们仍将驻留在`site`目录中。 要删除那些陈旧的文件，只需在运行`mkdocs`命令时带上`--clean`参数即可。
 

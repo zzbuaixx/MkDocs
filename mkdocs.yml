@@ -1,5 +1,4 @@
-site_name: My first mkdocs project
+site_name: MkDocs教程
 nav:    
-
     - MkDocs教程: MkDocs教程.md
 theme: readthedocs
