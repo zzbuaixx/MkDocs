@@ -1,0 +1,6 @@
+site_name: My first mkdocs project
+nav:    
+    - Home: index.md
+    - About: about.md
+    - 测试页: test.md
+theme: readthedocs
